@@ -1,0 +1,22 @@
+<?php
+
+namespace [namespace];
+
+//use [modelUse];
+use CodencoDev\CodencoFaster\Http\Livewire\ModelTableComponent;
+
+class [class] extends ModelTableComponent
+{
+    public $current = null;
+
+    //public string $modelClass = [model]::class;
+
+    protected array $search_fields = [
+        '[firstAttributeName]',
+            'code',
+    ];
+}
+
+
+
+

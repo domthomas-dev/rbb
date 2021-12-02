@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Team;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -17,6 +18,7 @@ class DatabaseSeeder extends Seeder
              ['name' => 'dom','email' => 'dthomas@codenco.fr',],
              ['name' => 'Nathan','email' => 'nathan76.thomas@gmail.com',],
          )->create();
-         \App\Models\User::factory(10)->create();
+
+         $this->call(TeamSeeder::class);
     }
 }

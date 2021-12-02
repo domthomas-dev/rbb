@@ -1,0 +1,18 @@
+<?php
+
+namespace [namespace];
+
+//use [modelUse];
+use CodencoDev\CodencoFaster\Http\Livewire\ModelDetailComponent;
+
+class [class] extends ModelDetailComponent
+{
+
+   // public string $modelClass = [model]::class;
+   // public [model] $current;
+
+}
+
+
+
+

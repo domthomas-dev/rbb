@@ -2,13 +2,13 @@
     <x-slot name="pageHeading">
         <x-codenco-faster::page-heading>
             <x-slot name="title">
-                Détail d'une équipe : {{$current->name}}
+                Détail [pagedetailTitle] : {{$current->[firstAttributeName]}}
             </x-slot>
         </x-codenco-faster::page-heading>
     </x-slot>
     <x-codenco-faster::panel>
         <div>
-            {{$current->name}}
+            {{$current->[firstAttributeName]}}
         </div>
 
         <x-slot name="action_form">

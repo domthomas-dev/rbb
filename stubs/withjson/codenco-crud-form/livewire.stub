@@ -1,0 +1,33 @@
+<?php
+
+namespace [namespace];
+
+//use [modelUse];
+use CodencoDev\CodencoFaster\Http\Livewire\ModelFormComponent;
+
+class [class] extends ModelFormComponent
+{
+    public $current = null;
+
+    // public string $modelClass = [model]::class;
+
+    protected $convertEmptyStringsExcept = [
+        'current.name.fr',
+        'current.name.en',
+        'current.name.it',
+        'current.name.es',
+        'current.name.de',
+     ];
+
+    protected $rules = [
+        'current.name.fr' => ['required', 'max:255', 'string'],
+        'current.name.en' => ['nullable', 'max:255', 'string'],
+        'current.name.it' => ['nullable', 'max:255', 'string'],
+        'current.name.es' => ['nullable', 'max:255', 'string'],
+        'current.name.de' => ['nullable', 'max:255', 'string'],
+    ];
+}
+
+
+
+
