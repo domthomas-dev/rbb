@@ -60,6 +60,9 @@
                                 <x-codenco-faster::dropdown-link :href="route(config('codenco-faster.back_prefix_name').'teams.index')" >
                                     {{ __('Equipes') }}
                                 </x-codenco-faster::dropdown-link >
+                                <x-codenco-faster::dropdown-link :href="route(config('codenco-faster.back_prefix_name').'clubs.index')" >
+                                    {{ __('Clubs') }}
+                                </x-codenco-faster::dropdown-link >
 
 
 
@@ -71,6 +74,9 @@
                                 </div>
                                 <x-codenco-faster::dropdown-link :href="route(config('codenco-faster.back_prefix_name').'positions.index')" >
                                     {{ __('Positions') }}
+                                </x-codenco-faster::dropdown-link >
+                                <x-codenco-faster::dropdown-link :href="route(config('codenco-faster.back_prefix_name').'regions.index')" >
+                                    {{ __('Regions') }}
                                 </x-codenco-faster::dropdown-link >
 
                             </x-slot>

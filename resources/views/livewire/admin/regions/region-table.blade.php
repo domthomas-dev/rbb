@@ -3,7 +3,7 @@
         <x-slot name="pageHeading">
             <x-codenco-faster::page-heading>
                 <x-slot name="title">
-                    Liste des clubs
+                    Liste des régions
                 </x-slot>
             </x-codenco-faster::page-heading>
         </x-slot>
@@ -21,18 +21,15 @@
                              :direction="$sorts['id'] ?? null" />
             <x-codenco-faster::table.heading text="Nom" sortable multi-column wire:click="sortBy('name')"
                              :direction="$sorts['name'] ?? null"/>
-            <x-codenco-faster::table.heading text="Nom" sortable multi-column wire:click="sortBy('name')"
-                                             :direction="$sorts['short_name'] ?? null"/>
         </x-slot>
 
         @forelse ($models as $model)
         <x-codenco-faster::crud._partials.commun-row :record="$model">
             <x-codenco-faster::table.cell :text="$model->id" />
            <x-codenco-faster::table.cell  :text="$model->name" />
-           <x-codenco-faster::table.cell  :text="$model->short_name" />
         </x-codenco-faster::crud._partials.commun-row>
         @empty
-        <x-codenco-faster::crud._partials.empty-row colspan="5"  />
+        <x-codenco-faster::crud._partials.empty-row colspan="4"  />
         @endforelse
 
         <x-slot name="links">

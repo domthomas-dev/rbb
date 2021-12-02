@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.0",
+        "bensampo/laravel-enum": "^4.1",
         "blade-ui-kit/blade-heroicons": "^1.2",
         "codenco-dev/codenco-faster": "dev-main",
         "fruitcake/laravel-cors": "^2.0",
@@ -14,7 +15,8 @@
         "laravel/jetstream": "^2.4",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
-        "livewire/livewire": "^2.5"
+        "livewire/livewire": "^2.5",
+        "owenvoke/blade-fontawesome": "^1.10"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

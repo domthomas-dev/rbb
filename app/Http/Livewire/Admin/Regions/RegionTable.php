@@ -1,19 +1,18 @@
 <?php
 
-namespace App\Http\Livewire\Admin\Clubs;
+namespace App\Http\Livewire\Admin\Regions;
 
-use App\Models\Club;
+use App\Models\Region;
 use CodencoDev\CodencoFaster\Http\Livewire\ModelTableComponent;
 
-class ClubTable extends ModelTableComponent
+class RegionTable extends ModelTableComponent
 {
     public $current = null;
 
-    public string $modelClass = Club::class;
+    public string $modelClass = Region::class;
 
     protected array $search_fields = [
         'name',
-        'short_name',
     ];
 }
 

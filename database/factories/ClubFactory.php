@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Region;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ClubFactory extends Factory
@@ -14,7 +15,15 @@ class ClubFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->word,
+            'short_name' =>  $this->faker->word,
+            'twitter' => $this->faker->word,
+            'facebook' => $this->faker->word,
+            'website' => $this->faker->url,
+            'youtube' => $this->faker->word,
+            'instagram' => $this->faker->word,
+            'level' => null,
+            'region_id' => Region::factory(),
         ];
     }
 }

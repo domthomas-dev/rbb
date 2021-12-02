@@ -40,3 +40,19 @@ Route::name(config('codenco-faster.back_prefix_name'))->prefix(config('codenco-f
     Route::get('/positions/{id}/edit', \App\Http\Livewire\Admin\Positions\PositionForm::class)->name('positions.edit');
 });
 
+Route::name(config('codenco-faster.back_prefix_name'))->prefix(config('codenco-faster.back_prefix_path'))->middleware(['auth'])->group(function (){
+    Route::get('/regions', \App\Http\Livewire\Admin\Regions\RegionTable::class)->name('regions.index');
+});
+Route::name(config('codenco-faster.back_prefix_name'))->prefix(config('codenco-faster.back_prefix_path'))->middleware(['auth'])->group(function (){
+    Route::get('/regions/create', \App\Http\Livewire\Admin\Regions\RegionForm::class)->name('regions.create');
+    Route::get('/regions/{id}/edit', \App\Http\Livewire\Admin\Regions\RegionForm::class)->name('regions.edit');
+});
+
+Route::name(config('codenco-faster.back_prefix_name'))->prefix(config('codenco-faster.back_prefix_path'))->middleware(['auth'])->group(function (){
+    Route::get('/clubs', \App\Http\Livewire\Admin\Clubs\ClubTable::class)->name('clubs.index');
+});
+Route::name(config('codenco-faster.back_prefix_name'))->prefix(config('codenco-faster.back_prefix_path'))->middleware(['auth'])->group(function (){
+    Route::get('/clubs/create', \App\Http\Livewire\Admin\Clubs\ClubForm::class)->name('clubs.create');
+    Route::get('/clubs/{id}/edit', \App\Http\Livewire\Admin\Clubs\ClubForm::class)->name('clubs.edit');
+});
+
