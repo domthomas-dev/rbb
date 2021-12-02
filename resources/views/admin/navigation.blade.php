@@ -64,13 +64,14 @@
 
 
 
+
                                 <!-- Account Management -->
                                 <div class="block px-4 py-2 text-xs text-gray-400">
                                     Paramétrage
                                 </div>
-                                <x-codenco-faster::dropdown-link href="#">
-                                    Lien à venir
-                                </x-codenco-faster::dropdown-link>
+                                <x-codenco-faster::dropdown-link :href="route(config('codenco-faster.back_prefix_name').'positions.index')" >
+                                    {{ __('Positions') }}
+                                </x-codenco-faster::dropdown-link >
 
                             </x-slot>
                         </x-codenco-faster::dropdown2>

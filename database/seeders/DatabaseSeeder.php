@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\Team;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -20,5 +19,6 @@ class DatabaseSeeder extends Seeder
          )->create();
 
          $this->call(TeamSeeder::class);
+         $this->call(PositionSeeder::class);
     }
 }

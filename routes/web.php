@@ -32,3 +32,11 @@ Route::name(config('codenco-faster.back_prefix_name'))->prefix(config('codenco-f
     Route::get('/teams/{id}/edit', \App\Http\Livewire\Admin\Teams\TeamForm::class)->name('teams.edit');
 });
 
+Route::name(config('codenco-faster.back_prefix_name'))->prefix(config('codenco-faster.back_prefix_path'))->middleware(['auth'])->group(function (){
+    Route::get('/positions', \App\Http\Livewire\Admin\Positions\PositionTable::class)->name('positions.index');
+});
+Route::name(config('codenco-faster.back_prefix_name'))->prefix(config('codenco-faster.back_prefix_path'))->middleware(['auth'])->group(function (){
+    Route::get('/positions/create', \App\Http\Livewire\Admin\Positions\PositionForm::class)->name('positions.create');
+    Route::get('/positions/{id}/edit', \App\Http\Livewire\Admin\Positions\PositionForm::class)->name('positions.edit');
+});
+

@@ -65,7 +65,7 @@ class PositionPolicy
      */
     public function delete(User $user, Position $position)
     {
-        return true;
+//        return !$position->player_season()->exists();
     }
 
     /**
