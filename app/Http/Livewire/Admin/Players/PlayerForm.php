@@ -81,6 +81,13 @@ class PlayerForm extends ModelFormComponent
         }
     }
 
+    public function removeRelated($relation,$related)
+    {
+        $this->{$relation} = $this->{$relation}?->reject(function ( $item) use ($related) {
+            return $item->id == $related;
+        });
+    }
+
 
 }
 
