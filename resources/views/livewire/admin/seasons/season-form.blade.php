@@ -17,6 +17,10 @@
                            :error="$errors->first('current.name')">
                 <x-codenco-faster::input.text wire:model.defer="current.name" id="name"/>
             </x-codenco-faster::input.group>
+            <x-codenco-faster::input.group required label="Nom" for="year"
+                                           :error="$errors->first('current.year')">
+                <x-codenco-faster::input.text wire:model.defer="current.year" id="year"/>
+            </x-codenco-faster::input.group>
             <x-codenco-faster::info-model :model="$current"></x-codenco-faster::info-model>
         </div>
         <x-slot name="action_form">

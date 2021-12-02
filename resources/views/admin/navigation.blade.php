@@ -82,6 +82,9 @@
                                 <x-codenco-faster::dropdown-link :href="route(config('codenco-faster.back_prefix_name').'regions.index')" >
                                     {{ __('Regions') }}
                                 </x-codenco-faster::dropdown-link >
+                                <x-codenco-faster::dropdown-link :href="route(config('codenco-faster.back_prefix_name').'seasons.index')" >
+                                    {{ __('Saisons') }}
+                                </x-codenco-faster::dropdown-link >
 
                             </x-slot>
                         </x-codenco-faster::dropdown2>

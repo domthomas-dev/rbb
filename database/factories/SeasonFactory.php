@@ -14,7 +14,8 @@ class SeasonFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => 'Saison '.$this->faker->year,
+            'name' => $this->faker->year,
         ];
     }
 }

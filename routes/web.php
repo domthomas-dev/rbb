@@ -65,3 +65,12 @@ Route::name(config('codenco-faster.back_prefix_name'))->prefix(config('codenco-f
     Route::get('/players/{id}/edit', \App\Http\Livewire\Admin\Players\PlayerForm::class)->name('players.edit');
 });
 
+
+Route::name(config('codenco-faster.back_prefix_name'))->prefix(config('codenco-faster.back_prefix_path'))->middleware(['auth'])->group(function (){
+    Route::get('/seasons', \App\Http\Livewire\Admin\Seasons\SeasonTable::class)->name('seasons.index');
+});
+Route::name(config('codenco-faster.back_prefix_name'))->prefix(config('codenco-faster.back_prefix_path'))->middleware(['auth'])->group(function (){
+    Route::get('/seasons/create', \App\Http\Livewire\Admin\Seasons\SeasonForm::class)->name('seasons.create');
+    Route::get('/seasons/{id}/edit', \App\Http\Livewire\Admin\Seasons\SeasonForm::class)->name('seasons.edit');
+});
+
