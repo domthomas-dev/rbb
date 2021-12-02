@@ -16,7 +16,9 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "livewire/livewire": "^2.5",
-        "owenvoke/blade-fontawesome": "^1.10"
+        "owenvoke/blade-fontawesome": "^1.10",
+        "spatie/laravel-medialibrary": "^9.0.0",
+        "spatie/laravel-medialibrary-pro": "^1.0.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

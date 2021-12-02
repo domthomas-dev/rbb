@@ -21,6 +21,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
+Route::mediaLibrary();
 
 
 
@@ -54,5 +55,13 @@ Route::name(config('codenco-faster.back_prefix_name'))->prefix(config('codenco-f
 Route::name(config('codenco-faster.back_prefix_name'))->prefix(config('codenco-faster.back_prefix_path'))->middleware(['auth'])->group(function (){
     Route::get('/clubs/create', \App\Http\Livewire\Admin\Clubs\ClubForm::class)->name('clubs.create');
     Route::get('/clubs/{id}/edit', \App\Http\Livewire\Admin\Clubs\ClubForm::class)->name('clubs.edit');
+});
+
+Route::name(config('codenco-faster.back_prefix_name'))->prefix(config('codenco-faster.back_prefix_path'))->middleware(['auth'])->group(function (){
+    Route::get('/players', \App\Http\Livewire\Admin\Players\PlayerTable::class)->name('players.index');
+});
+Route::name(config('codenco-faster.back_prefix_name'))->prefix(config('codenco-faster.back_prefix_path'))->middleware(['auth'])->group(function (){
+    Route::get('/players/create', \App\Http\Livewire\Admin\Players\PlayerForm::class)->name('players.create');
+    Route::get('/players/{id}/edit', \App\Http\Livewire\Admin\Players\PlayerForm::class)->name('players.edit');
 });
 

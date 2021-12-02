@@ -15,6 +15,16 @@ class CreatePlayersTable extends Migration
     {
         Schema::create('players', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('firstname');
+            $table->string('gender')->default(\App\Enums\Gender::NR);
+            $table->string('throwing_hand')->nullable();
+            $table->string('bating_position')->nullable();
+            $table->integer('size')->nullable();
+            $table->integer('weight')->nullable();
+            $table->date('born_at')->nullable();
+            $table->string('place_of_born')->nullable();
+            $table->string('arriving_year')->nullable();
             $table->timestamps();
         });
     }

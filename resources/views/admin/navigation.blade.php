@@ -57,6 +57,10 @@
                                     Liste de valeurs
                                 </div>
 
+                                <x-codenco-faster::dropdown-link :href="route(config('codenco-faster.back_prefix_name').'players.index')" >
+                                    {{ __('Joueurs') }}
+                                </x-codenco-faster::dropdown-link >
+
                                 <x-codenco-faster::dropdown-link :href="route(config('codenco-faster.back_prefix_name').'teams.index')" >
                                     {{ __('Equipes') }}
                                 </x-codenco-faster::dropdown-link >

@@ -19,17 +19,21 @@
         <x-slot name="tableHeading">
             <x-codenco-faster::table.heading text="ID" sortable multi-column wire:click="sortBy('id')"
                              :direction="$sorts['id'] ?? null" />
+            <x-codenco-faster::table.heading text="Prénom" sortable  wire:click="sortBy('firstname')"
+                                             :direction="$sorts['firstname'] ?? null"/>
             <x-codenco-faster::table.heading text="Nom" sortable multi-column wire:click="sortBy('name')"
                              :direction="$sorts['name'] ?? null"/>
+
         </x-slot>
 
         @forelse ($models as $model)
         <x-codenco-faster::crud._partials.commun-row :record="$model">
             <x-codenco-faster::table.cell :text="$model->id" />
+           <x-codenco-faster::table.cell  :text="$model->firstname" />
            <x-codenco-faster::table.cell  :text="$model->name" />
         </x-codenco-faster::crud._partials.commun-row>
         @empty
-        <x-codenco-faster::crud._partials.empty-row colspan="4"  />
+        <x-codenco-faster::crud._partials.empty-row colspan="5"  />
         @endforelse
 
         <x-slot name="links">
