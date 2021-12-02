@@ -6,6 +6,8 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
+        "blade-ui-kit/blade-heroicons": "^1.2",
+        "codenco-dev/codenco-faster": "^0.1.1",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.65",
@@ -60,5 +62,15 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/codenco-dev/codenco-faster"
+        },
+        {
+            "type": "composer",
+            "url": "https://satis.spatie.be"
+        }
+    ]
 }
