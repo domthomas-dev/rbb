@@ -14,6 +14,11 @@
     <x-codenco-faster::panel>
         <div>
 
+            <x-codenco-faster::input.group required borderless="true" label="Sexe" for="gender"
+                                           :error="$errors->first('current.gender')">
+                <x-codenco-faster::input.select wire:model.defer="current.gender" id="gender"
+                :options="\App\Enums\Gender::asSelectArray()"/>
+            </x-codenco-faster::input.group>
 
             <x-codenco-faster::input.group required borderless="true" label="Prénom" for="firstname"
                                            :error="$errors->first('current.firstname')">
