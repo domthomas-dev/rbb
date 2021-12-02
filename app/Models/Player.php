@@ -16,6 +16,8 @@ class Player extends Model implements HasMedia
     use HasFactory;
     use InteractsWithMedia;
 
+    protected $guarded = [];
+
     public function registerMediaCollections(): void
     {
         $this

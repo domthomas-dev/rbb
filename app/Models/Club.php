@@ -12,6 +12,8 @@ class Club extends Model
     use HasFactory;
     use HasList;
 
+    protected $guarded = [];
+
     public function players(): BelongsToMany
     {
         return $this->belongsToMany(Player::class);

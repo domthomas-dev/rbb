@@ -14,11 +14,7 @@
     <x-codenco-faster::panel>
         <div>
 
-            <x-codenco-faster::input.group required borderless="true" label="Sexe" for="gender"
-                                           :error="$errors->first('current.gender')">
-                <x-codenco-faster::input.select wire:model.defer="current.gender" id="gender"
-                :options="\App\Enums\Gender::asSelectArray()"/>
-            </x-codenco-faster::input.group>
+
 
             <x-codenco-faster::input.group required borderless="true" label="Prénom" for="firstname"
                                            :error="$errors->first('current.firstname')">
@@ -28,6 +24,12 @@
             <x-codenco-faster::input.group required label="Nom" for="name"
                            :error="$errors->first('current.name')">
                 <x-codenco-faster::input.text wire:model.defer="current.name" id="name"/>
+            </x-codenco-faster::input.group>
+
+            <x-codenco-faster::input.group required label="Sexe" for="gender"
+                                           :error="$errors->first('current.gender')">
+                <x-codenco-faster::input.select wire:model.defer="current.gender" id="gender"
+                                                :options="\App\Enums\Gender::asSelectArray()"/>
             </x-codenco-faster::input.group>
 
             <x-codenco-faster::input.group label="Main de lancer" for="throwing_hand"

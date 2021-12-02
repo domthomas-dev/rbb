@@ -10,4 +10,5 @@ class Region extends Model
 {
     use HasFactory;
     use HasList;
+    protected $guarded = [];
 }
