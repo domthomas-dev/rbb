@@ -17,23 +17,16 @@
         </x-slot>
 
         <x-slot name="tableHeading">
-            <x-codenco-faster::table.heading sortable multi-column wire:click="sortBy('id')"
-                             :direction="$sorts['id'] ?? null">
-                ID
-            </x-codenco-faster::table.heading>
-            <x-codenco-faster::table.heading sortable multi-column wire:click="sortBy('name')"
-                             :direction="$sorts['name'] ?? null">Nom
-             </x-codenco-faster::table.heading>
+            <x-codenco-faster::table.heading text="ID" sortable multi-column wire:click="sortBy('id')"
+                             :direction="$sorts['id'] ?? null" />
+            <x-codenco-faster::table.heading text="Nom" sortable multi-column wire:click="sortBy('name')"
+                             :direction="$sorts['name'] ?? null"/>
         </x-slot>
 
         @forelse ($models as $model)
         <x-codenco-faster::crud._partials.commun-row :record="$model">
-            <x-codenco-faster::table.cell>
-                <span class="text-cool-gray-600 font-medium">{{ $model->id}} </span>
-            </x-codenco-faster::table.cell>
-           <x-codenco-faster::table.cell>
-                <span class="text-cool-gray-600 font-medium">{{ $model->name}} </span>
-           </x-codenco-faster::table.cell>
+            <x-codenco-faster::table.cell :text="$model->id" />
+           <x-codenco-faster::table.cell  :text="$model->name" />
         </x-codenco-faster::crud._partials.commun-row>
         @empty
         <x-codenco-faster::crud._partials.empty-row colspan="4"  />

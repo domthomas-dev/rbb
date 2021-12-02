@@ -4,8 +4,70 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2009b9e7f08cda4e08b5587d3979bdcf",
+    "content-hash": "e459fa6592c05bf0bf15907e0553edf3",
     "packages": [
+        {
+            "name": "asantibanez/livewire-select",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asantibanez/livewire-select.git",
+                "reference": "9bdc4f1367f06323d7906177ee3ab587d01d360f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asantibanez/livewire-select/zipball/9bdc4f1367f06323d7906177ee3ab587d01d360f",
+                "reference": "9bdc4f1367f06323d7906177ee3ab587d01d360f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
+                "livewire/livewire": "^2.0",
+                "php": "^7.2|^7.3|^7.4|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^5.0|^6.0|^7.0",
+                "phpunit/phpunit": "^8.0|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Asantibanez\\LivewireSelect\\LivewireSelectServiceProvider"
+                    ],
+                    "aliases": {
+                        "LivewireSelect": "Asantibanez\\LivewireSelect\\LivewireSelectFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Asantibanez\\LivewireSelect\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrés Santibáñez",
+                    "email": "santibanez.andres@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Livewire dropdown select component",
+            "homepage": "https://github.com/asantibanez/livewire-select",
+            "keywords": [
+                "asantibanez",
+                "livewire-select"
+            ],
+            "support": {
+                "issues": "https://github.com/asantibanez/livewire-select/issues",
+                "source": "https://github.com/asantibanez/livewire-select/tree/v2.1.0"
+            },
+            "time": "2021-07-31T22:42:23+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "v2.0.3",
@@ -327,19 +389,20 @@
         },
         {
             "name": "codenco-dev/codenco-faster",
-            "version": "v0.1.1",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "git@github.com:codenco-dev/codenco-faster.git",
-                "reference": "2220293ff48223ecfac3a26cd78ed703304f413f"
+                "reference": "8930f93fc3eb68e2566a629aec09c1ce427e1347"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codenco-dev/codenco-faster/zipball/2220293ff48223ecfac3a26cd78ed703304f413f",
-                "reference": "2220293ff48223ecfac3a26cd78ed703304f413f",
+                "url": "https://api.github.com/repos/codenco-dev/codenco-faster/zipball/8930f93fc3eb68e2566a629aec09c1ce427e1347",
+                "reference": "8930f93fc3eb68e2566a629aec09c1ce427e1347",
                 "shasum": ""
             },
             "require": {
+                "asantibanez/livewire-select": "^2.1",
                 "illuminate/contracts": "^8.37",
                 "jantinnerezo/livewire-alert": "^2.1",
                 "livewire/livewire": "^2.5",
@@ -354,6 +417,7 @@
                 "spatie/laravel-ray": "^1.23",
                 "vimeo/psalm": "^4.8"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -405,7 +469,7 @@
                 "laravel"
             ],
             "support": {
-                "source": "https://github.com/codenco-dev/codenco-faster/tree/v0.1.1",
+                "source": "https://github.com/codenco-dev/codenco-faster/tree/main",
                 "issues": "https://github.com/codenco-dev/codenco-faster/issues"
             },
             "funding": [
@@ -414,7 +478,7 @@
                     "url": "https://github.com/codenco-dev"
                 }
             ],
-            "time": "2021-10-12T13:02:27+00:00"
+            "time": "2021-11-28T13:54:28+00:00"
         },
         {
             "name": "dasprid/enum",
@@ -2340,16 +2404,16 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v2.8.0",
+            "version": "v2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "fc8c315babf8d42c2a25f207b3931b1bc8eb5e70"
+                "reference": "0f846a93369109e445f0e5009741b1e19e6fa6f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/fc8c315babf8d42c2a25f207b3931b1bc8eb5e70",
-                "reference": "fc8c315babf8d42c2a25f207b3931b1bc8eb5e70",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/0f846a93369109e445f0e5009741b1e19e6fa6f6",
+                "reference": "0f846a93369109e445f0e5009741b1e19e6fa6f6",
                 "shasum": ""
             },
             "require": {
@@ -2400,7 +2464,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v2.8.0"
+                "source": "https://github.com/livewire/livewire/tree/v2.8.1"
             },
             "funding": [
                 {
@@ -2408,7 +2472,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-24T04:33:15+00:00"
+            "time": "2021-12-02T01:31:26+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -8871,11 +8935,13 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "codenco-dev/codenco-faster": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.3|^8.0"
+        "php": "^8.0"
     },
     "platform-dev": [],
     "plugin-api-version": "2.1.0"

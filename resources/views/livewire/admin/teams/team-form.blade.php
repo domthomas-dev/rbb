@@ -13,10 +13,11 @@
 
     <x-codenco-faster::panel>
         <div>
-            <x-codenco-faster::input.group borderless="true" label="Nom" for="name"
+            <x-codenco-faster::input.group required borderless="true" label="Nom" for="name"
                            :error="$errors->first('current.name')">
                 <x-codenco-faster::input.text wire:model.defer="current.name" id="name"/>
             </x-codenco-faster::input.group>
+            <x-codenco-faster::info-model :model="$current"></x-codenco-faster::info-model>
         </div>
         <x-slot name="action_form">
             <x-codenco-faster::crud._partials.button-form />

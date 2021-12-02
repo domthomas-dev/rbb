@@ -5,9 +5,9 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^7.3|^8.0",
+        "php": "^8.0",
         "blade-ui-kit/blade-heroicons": "^1.2",
-        "codenco-dev/codenco-faster": "^0.1.1",
+        "codenco-dev/codenco-faster": "dev-main",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.65",
