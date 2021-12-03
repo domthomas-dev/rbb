@@ -36,7 +36,7 @@
                                            :error="$errors->first('current.throwing_hand')">
                 <x-codenco-faster::input.select wire:model.defer="current.throwing_hand" id="throwing_hand"
                 :options="\App\Enums\ThrowingHand::asSelectArray()"
-                                                placeholder=""
+                                                placeholder="Vide"
                 />
             </x-codenco-faster::input.group>
 
@@ -44,7 +44,7 @@
                                            :error="$errors->first('current.bating_position')">
                 <x-codenco-faster::input.select wire:model.defer="current.bating_position" id="bating_position"
                                                 :options="\App\Enums\BatingPosition::asSelectArray()"
-                                                placeholder=""
+                                                placeholder="Vide"
                 />
             </x-codenco-faster::input.group>
 
