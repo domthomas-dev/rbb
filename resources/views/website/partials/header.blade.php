@@ -101,7 +101,7 @@
             <div class="pt-5 pb-6 px-5 sm:pb-8">
                 <div class="flex items-center justify-between">
                     <div>
-                        <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow">
+                        <x-logo class="h-8 w-auto sm:h-10"></x-logo>
                     </div>
                     <div class="-mr-2">
                         <button type="button" @click="showMobile = false" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -119,28 +119,27 @@
                             <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
                                 Accueil
                             </a>
+                            <a href="{{route('players.index')}}" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                                Les joueurs
+                            </a>
                             <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
                                 Europe
                             </a>
 
                             <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
-                                Equipes
+                                Equipes (Coming soon)
                             </a>
                             <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
-                                Le club
+                                Le club (Coming soon)
                             </a>
-                            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
-                                96 champions
-                            </a>
-                            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
-                                Histoire
-                            </a>
+
+
 
                             <a href="https://www.shoprouenhuskies.com/" target="_blank" class="text-base font-medium text-gray-500 hover:text-gray-900">
                                 Huskies shop
                             </a>
                             <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
-                                Contact
+                                Contact (Coming soon)
                             </a>
                         </div>
                         <div class="mt-8 text-base">
