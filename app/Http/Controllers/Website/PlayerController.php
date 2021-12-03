@@ -15,7 +15,7 @@ class PlayerController extends Controller
      */
     public function index()
     {
-        //
+        return view('website.players.index',['players' => Player::orderBy('name')->paginate(50)]);
     }
 
     /**
@@ -47,7 +47,7 @@ class PlayerController extends Controller
      */
     public function show(Player $player)
     {
-        
+
         return view('website.players.show',compact('player'));
     }
 

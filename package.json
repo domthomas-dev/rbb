@@ -16,10 +16,13 @@
         "axios": "^0.21",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
+        "moment": "^2.29.1",
+        "pikaday": "^1.8.2",
         "postcss": "^8.1.14",
         "postcss-import": "^14.0.1",
-        "tailwindcss": "^2.2.2",
-        "moment": "^2.29.1",
-        "pikaday": "^1.8.2"
+        "tailwindcss": "^2.2.2"
+    },
+    "dependencies": {
+        "@tailwindcss/aspect-ratio": "^0.3.0"
     }
 }

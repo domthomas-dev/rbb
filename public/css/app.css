@@ -781,6 +781,55 @@ video {
 	margin-top: 0;
 }.prose > :last-child{
 	margin-bottom: 0;
+}.aspect-w-1,
+.aspect-w-2,
+.aspect-w-3,
+.aspect-w-4,
+.aspect-w-5,
+.aspect-w-6,
+.aspect-w-7,
+.aspect-w-8,
+.aspect-w-9,
+.aspect-w-10,
+.aspect-w-11,
+.aspect-w-12,
+.aspect-w-13,
+.aspect-w-14,
+.aspect-w-15,
+.aspect-w-16{
+	position: relative;
+	padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+}.aspect-w-1 > *,
+.aspect-w-2 > *,
+.aspect-w-3 > *,
+.aspect-w-4 > *,
+.aspect-w-5 > *,
+.aspect-w-6 > *,
+.aspect-w-7 > *,
+.aspect-w-8 > *,
+.aspect-w-9 > *,
+.aspect-w-10 > *,
+.aspect-w-11 > *,
+.aspect-w-12 > *,
+.aspect-w-13 > *,
+.aspect-w-14 > *,
+.aspect-w-15 > *,
+.aspect-w-16 > *{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}.aspect-w-2{
+	--tw-aspect-w: 2;
+}.aspect-w-3{
+	--tw-aspect-w: 3;
+}.aspect-h-2{
+	--tw-aspect-h: 2;
+}.aspect-h-3{
+	--tw-aspect-h: 3;
 }.sr-only{
 	position: absolute;
 	width: 1px;
@@ -851,6 +900,9 @@ video {
 }.-my-2{
 	margin-top: -0.5rem;
 	margin-bottom: -0.5rem;
+}.my-12{
+	margin-top: 3rem;
+	margin-bottom: 3rem;
 }.ml-3{
 	margin-left: 0.75rem;
 }.-ml-px{
@@ -949,6 +1001,8 @@ video {
 	height: 0.5rem;
 }.h-48{
 	height: 12rem;
+}.h-1\/3{
+	height: 33.333333%;
 }.h-3{
 	height: 0.75rem;
 }.h-32{
@@ -1009,6 +1063,12 @@ video {
 	max-width: 36rem;
 }.max-w-6xl{
 	max-width: 72rem;
+}.max-w-lg{
+	max-width: 32rem;
+}.max-w-sm{
+	max-width: 24rem;
+}.max-w-2xl{
+	max-width: 42rem;
 }.flex-1{
 	flex: 1 1 0%;
 }.flex-initial{
@@ -1082,6 +1142,8 @@ video {
 	gap: 1.75rem;
 }.gap-2{
 	gap: 0.5rem;
+}.gap-5{
+	gap: 1.25rem;
 }.gap-y-6{
 	row-gap: 1.5rem;
 }.gap-y-20{
@@ -1126,6 +1188,10 @@ video {
 	--tw-space-y-reverse: 0;
 	margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
 	margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}.space-y-2 > :not([hidden]) ~ :not([hidden]){
+	--tw-space-y-reverse: 0;
+	margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+	margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }.space-x-1 > :not([hidden]) ~ :not([hidden]){
 	--tw-space-x-reverse: 0;
 	margin-right: calc(0.25rem * var(--tw-space-x-reverse));
@@ -1397,6 +1463,8 @@ video {
 	padding-bottom: 2rem;
 }.pt-8{
 	padding-top: 2rem;
+}.pb-20{
+	padding-bottom: 5rem;
 }.pr-3{
 	padding-right: 0.75rem;
 }.text-left{
@@ -1442,6 +1510,8 @@ video {
 	font-weight: 700;
 }.font-black{
 	font-weight: 900;
+}.font-normal{
+	font-weight: 400;
 }.uppercase{
 	text-transform: uppercase;
 }.italic{
@@ -1977,6 +2047,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 		margin-top: 1px;
 	}.sm\:mt-8{
 		margin-top: 2rem;
+	}.sm\:mt-4{
+		margin-top: 1rem;
 	}.sm\:block{
 		display: block;
 	}.sm\:flex{
@@ -1989,6 +2061,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 		height: 2.5rem;
 	}.sm\:h-12{
 		height: 3rem;
+	}.sm\:h-2\/3{
+		height: 66.666667%;
 	}.sm\:w-10{
 		width: 2.5rem;
 	}.sm\:w-full{
@@ -2005,6 +2079,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 		max-width: 36rem;
 	}.sm\:max-w-2xl{
 		max-width: 42rem;
+	}.sm\:max-w-none{
+		max-width: none;
 	}.sm\:flex-1{
 		flex: 1 1 0%;
 	}.sm\:translate-y-0{
@@ -2216,14 +2292,22 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 		margin-left: 0px;
 	}.lg\:mt-4{
 		margin-top: 1rem;
+	}.lg\:h-24{
+		height: 6rem;
 	}.lg\:min-h-full{
 		min-height: 100%;
+	}.lg\:w-24{
+		width: 6rem;
 	}.lg\:max-w-3xl{
 		max-width: 48rem;
+	}.lg\:max-w-none{
+		max-width: none;
 	}.lg\:grid-cols-4{
 		grid-template-columns: repeat(4, minmax(0, 1fr));
 	}.lg\:grid-cols-3{
 		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}.lg\:grid-cols-5{
+		grid-template-columns: repeat(5, minmax(0, 1fr));
 	}.lg\:flex-col{
 		flex-direction: column;
 	}.lg\:gap-5{
@@ -2246,9 +2330,16 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 	}.lg\:py-24{
 		padding-top: 6rem;
 		padding-bottom: 6rem;
+	}.lg\:pt-24{
+		padding-top: 6rem;
+	}.lg\:pb-28{
+		padding-bottom: 7rem;
 	}.lg\:text-4xl{
 		font-size: 2.25rem;
 		line-height: 2.5rem;
+	}.lg\:text-sm{
+		font-size: 0.875rem;
+		line-height: 1.25rem;
 	}
 }@media (min-width: 1280px){.xl\:col-span-2{
 		grid-column: span 2 / span 2;

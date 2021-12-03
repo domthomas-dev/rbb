@@ -24,6 +24,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::mediaLibrary();
 
 Route::get('players/{player}',[\App\Http\Controllers\Website\PlayerController::class,'show'])->name('players.show');
+Route::get('players',[\App\Http\Controllers\Website\PlayerController::class,'index'])->name('players.index');
 
 Route::name(config('codenco-faster.back_prefix_name'))->prefix(config('codenco-faster.back_prefix_path'))->middleware(['auth'])->group(function (){
     Route::get('/teams', \App\Http\Livewire\Admin\Teams\TeamTable::class)->name('teams.index');
