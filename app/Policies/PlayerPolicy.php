@@ -32,6 +32,10 @@ class PlayerPolicy
     {
         return false;
     }
+    public function websiteView(User $user, Player $player)
+    {
+        return true;
+    }
 
     /**
      * Determine whether the user can create models.

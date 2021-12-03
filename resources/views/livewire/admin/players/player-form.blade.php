@@ -89,6 +89,17 @@
                 </div>
             </x-codenco-faster::input.group>
 
+            <x-codenco-faster::input.group  label="Photo arrière plan" for="pictures"
+            >
+                <div wire:ignore>
+                    <x-media-library-collection wire:change.debounce="500" name="pictures"
+                                                :model="$current"
+                                                :collection="\App\Enums\MediaCollectionName::PLAYER_BACK"
+
+                    />
+                </div>
+            </x-codenco-faster::input.group>
+
             <x-codenco-faster::input.group  label="Clubs successifs" for="clubs"
                                             :error="$errors->first('current.clubs')">
                 <livewire:admin.clubs.club-autocomplete-select
@@ -105,6 +116,19 @@
                         </x-codenco-faster::tag>
                     @endforeach
                 </div>
+            </x-codenco-faster::input.group>
+
+            <x-codenco-faster::input.group label="Biographie" for="biography"
+                                           :error="$errors->first('current.biography')">
+                <x-codenco-faster::input.ckeditor wire:model="current.biography">
+                    {!! $current->biography !!}
+                </x-codenco-faster::input.ckeditor>
+
+            </x-codenco-faster::input.group>
+
+            <x-codenco-faster::input.group label="Est un coach" for="is_coach"
+                                           :error="$errors->first('current.is_coach')">
+                <x-codenco-faster::input.checkbox wire:model.defer="current.is_coach" id="is_coach"/>
             </x-codenco-faster::input.group>
 
             <x-codenco-faster::info-model :model="$current"></x-codenco-faster::info-model>

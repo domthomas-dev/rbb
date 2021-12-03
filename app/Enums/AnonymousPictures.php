@@ -13,7 +13,7 @@ use BenSampo\Enum\Enum;
 final class AnonymousPictures extends Enum
 {
     const POSTER =   '/images/anonymous-images/no-poster.jpg';
-    const BACKDROP =   '/images/anonymous-images/no-backdrops.jpg';
-    const MALE_PROFILE =  '/images/anonymous-images/no-picture-man-rect.jpg';
+    const BACKDROP =   '/images/anonymous-images/no-backdrops.png';
+    const MALE_PROFILE =  '/images/anonymous-images/no-picture-man-rect.png';
     const FEMALE_PROFILE = '/images/anonymous-images/no-picture-women-rect.jpg';
 }
