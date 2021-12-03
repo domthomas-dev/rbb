@@ -3,7 +3,7 @@
     <div class="relative z-20">
         <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
             <div>
-                <a href="#" class="flex">
+                <a href="{{route('home')}}" class="flex">
                     <span class="sr-only">Workflow</span>
                     <x-logo class="h-8 w-auto sm:h-10"></x-logo>
                 </a>
@@ -116,7 +116,7 @@
                 <div class="mt-6 sm:mt-8">
                     <nav>
                         <div class="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
-                            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                            <a href="{{route('home')}}" class="text-base font-medium text-gray-500 hover:text-gray-900">
                                 Accueil
                             </a>
                             <a href="{{route('players.index')}}" class="text-base font-medium text-gray-500 hover:text-gray-900">
