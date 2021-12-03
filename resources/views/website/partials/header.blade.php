@@ -122,9 +122,7 @@
                             <a href="{{route('players.index')}}" class="text-base font-medium text-gray-500 hover:text-gray-900">
                                 Les joueurs
                             </a>
-                            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
-                                Europe
-                            </a>
+
 
                             <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
                                 Equipes (Coming soon)
